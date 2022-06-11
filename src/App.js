@@ -5,10 +5,9 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+function NavbarMenu() {
   return (
-    <div>
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
           <Navbar.Brand 
           href="https://reactjs.org"
@@ -42,8 +41,12 @@ function App() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+  )
+}
 
-      <Container>
+function MainContent() {
+  return (
+    <Container>
         <h1>Fun facts about React</h1>
         <ul>
           <li>Was first released in 2013</li>
@@ -53,9 +56,23 @@ function App() {
           <li>Powers thousands of enterprise apps, including mobile apps</li>
         </ul>
       </Container>
-      <footer>
-        <small>© 2022 Elarabi development. All rights reserved.</small>
-      </footer>
+  )
+}
+
+function Footer() {
+  return (
+    <footer>
+      <small>© 2022 Elarabi development. All rights reserved.</small>
+    </footer>
+  )
+}
+
+function App() {
+  return (
+    <div>
+      <NavbarMenu />
+      <MainContent />
+      <Footer />
     </div>
   );
 }
