@@ -69,7 +69,7 @@ function Footer() {
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <NavbarMenu />
       <MainContent />
       <Footer />

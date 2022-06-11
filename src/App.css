@@ -1,5 +1,7 @@
 .App {
-  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -9,6 +11,14 @@
 
 .App-logo:focus-visible {
   outline: none;
+}
+
+Footer {
+  margin-top: auto;
+  padding: 5px;
+  text-align: right;
+  background-color: rgba(var(--bs-dark-rgb));
+  color: #fff;
 }
 
 @media (prefers-reduced-motion: no-preference) {
